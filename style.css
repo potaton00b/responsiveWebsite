@@ -1,0 +1,83 @@
+body{
+    background-color: antiquewhite;
+    padding: 20px 40px;
+    
+}
+
+
+h2{
+    font-size: 30pt;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0px;
+}
+h1{
+    font-family: "Geologica", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0,
+        "SHRP" 0;
+}
+
+span{
+    color: lime;
+}
+
+@media (max-width: 600px){
+    h1{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .body{
+        width: 100%;
+    }
+    .artworks img{
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 601px){
+    h1{
+        font-size: 4rem;
+        width: 60%;        
+    }
+    #header{
+        width:100%;
+        margin: 42.880px 0px;
+    }
+    .artworks{
+        width: 90%;
+        position: relative;
+    }
+    .beauty, .construction{
+        width: 49%;
+        display: inline-block;
+        position: absolute;
+        
+    }
+    .construction{
+        width: 49%;
+        display: inline-block;
+        left: 50%;
+    }
+
+    .beauty > img, .construction > img{
+        width: 40%;
+        float: left;
+        padding-right: 4%;
+    }
+    
+    h3{
+        font-size: 1.3rem;
+        margin-top: 10px;
+    }
+    #btext, #ctext{
+        width: 90%;
+        height: 100%;
+    }
+}
